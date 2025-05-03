@@ -1,0 +1,28 @@
+/* type selector */
+/* vh is viewport height so it can adapt to different displays */
+img {
+    height: 40vh;
+}
+
+/* id selector */
+/* rem is relative to root element meaning the default text size of the html page */
+#titleMain {
+    font-weight: bold;
+    font-size: 1.20rem;
+    color: #ee1213;
+}
+
+/* relational selector */
+ul>li {
+    font-style: italic;
+}
+
+/* combination selector */
+footer.titleFoot {
+    font-size: 0.80rem;
+}
+
+/* psuedo-class */
+a:hover {
+    color: #ee1213;
+}
