@@ -1,0 +1,17 @@
+#goldenLegend {
+    column-count: 2;
+    column-gap: 40px;
+    column-rule: 2px solid #ee1213;
+}
+
+#goldenLegend h1 {
+    font-weight: bold;
+    font-size: 1.20rem;
+    color: #ee1213;
+}
+
+#goldenLegend img {
+    width: 40vw;
+    border: 5px solid #ee1213;
+    margin: 1%;
+}

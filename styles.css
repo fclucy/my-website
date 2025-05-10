@@ -9,7 +9,7 @@ img {
 #titleMain {
     font-weight: bold;
     font-size: 1.20rem;
-    color: #ee1213;
+    color: #ffffff;
 }
 
 /* relational selector */
@@ -20,9 +20,32 @@ ul>li {
 /* combination selector */
 footer.titleFoot {
     font-size: 0.80rem;
+    padding: 5px;
+    background-image: linear-gradient(#ee1213,#000000);
+    color: #ffffff;
+}
+
+a {
+    color:#ffffff;
+    background-image: linear-gradient(#ee1213,#000000);
+}
+
+header a {
+    color: #ffffff;
+    padding: 5px;
 }
 
 /* psuedo-class */
 a:hover {
-    color: #ee1213;
+    color: #e1e213;
+}
+
+header a:hover {
+    color: #e1e213;
+}
+
+header {
+    background-image: linear-gradient(#ee1213,#000000);
+    text-align: center;
+    padding: 5px;
 }
