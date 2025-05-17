@@ -17,6 +17,10 @@ ul>li {
     font-style: italic;
 }
 
+ul.eye {
+    list-style-image: url("./images/eye.png");
+}
+
 /* combination selector */
 footer.titleFoot {
     font-size: 0.80rem;
