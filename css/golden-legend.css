@@ -1,5 +1,5 @@
 #goldenLegend {
-    column-count: 2;
+    column-count: 3;
     column-gap: 40px;
     column-rule: 2px solid #ee1213;
 }
@@ -10,8 +10,19 @@
     color: #ee1213;
 }
 
+/* Scalable image using percentages for width and height. */
 #goldenLegend img {
-    width: 40vw;
+    height: 70%;
+    width: 90%;
     border: 5px solid #ee1213;
     margin: 1%;
+}
+
+/* Media Query to reduce the column count to 2 when width is too small for 3 columns. */
+@media only screen and (max-width: 510px) {
+    #goldenLegend {
+        column-count: 2;
+        column-gap: 40px;
+        column-rule: 2px solid #ee1213;
+    }
 }

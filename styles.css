@@ -17,7 +17,7 @@ ul>li {
     font-style: italic;
 }
 
-ul.eye {
+ul.custom_ul {
     list-style-image: url("./images/eye.png");
 }
 
@@ -29,7 +29,12 @@ footer.titleFoot {
     color: #ffffff;
 }
 
-a {
+a.offsite {
+    color:#ffffff;
+    background-image: linear-gradient(#ee1213,#000000);
+}
+
+a.placeholder {
     color:#ffffff;
     background-image: linear-gradient(#ee1213,#000000);
 }
@@ -52,4 +57,50 @@ header {
     background-image: linear-gradient(#ee1213,#000000);
     text-align: center;
     padding: 5px;
+}
+
+nav {
+    background-image: linear-gradient(#ee1213,#000000);
+}
+
+#nav_menu ul {
+    list-style-type: none;
+    padding: 1em 0;
+    text-align: center;
+    border-top: 2px solid #ee1213;
+    border-bottom: 2px solid #ee1213;
+}
+
+#nav_menu ul li {
+    display: inline;
+    padding: 0 1.5em;
+    font-style: normal;
+}
+
+#nav_menu ul li a {
+    color: #ffffff;
+}
+
+#nav_menu ul li a:hover {
+    color: #e1e213;
+}
+
+/* Media Query shift from horizontal to verical navigation menu. */
+@media only screen and (max-width: 510px) {
+    #nav_menu ul {
+        list-style-type: none;
+        margin-left: 1.25em;
+        margin-bottom: 1.5em;
+    }
+
+    #nav_menu ul li {
+        width: 200px;
+        margin-bottom: .5em;
+    }
+
+    #nav_menu ul li a {
+        display: block;
+        padding: .5em 0 .5em 1.5em;
+        color: #ffffff;
+    }
 }
