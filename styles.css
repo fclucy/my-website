@@ -25,18 +25,18 @@ ul.custom_ul {
 footer.titleFoot {
     font-size: 0.80rem;
     padding: 5px;
-    background-image: linear-gradient(#ee1213,#000000);
+    background-image: linear-gradient(#ee1213, #000000);
     color: #ffffff;
 }
 
 a.offsite {
-    color:#ffffff;
-    background-image: linear-gradient(#ee1213,#000000);
+    color: #ffffff;
+    background-image: linear-gradient(#ee1213, #000000);
 }
 
 a.placeholder {
-    color:#ffffff;
-    background-image: linear-gradient(#ee1213,#000000);
+    color: #ffffff;
+    background-image: linear-gradient(#ee1213, #000000);
 }
 
 header a {
@@ -54,21 +54,23 @@ header a:hover {
 }
 
 header {
-    background-image: linear-gradient(#ee1213,#000000);
+    background-image: linear-gradient(#ee1213, #000000);
     text-align: center;
     padding: 5px;
 }
 
 nav {
-    background-image: linear-gradient(#ee1213,#000000);
+    background-image: linear-gradient(#ee1213, #000000);
 }
 
+/* Flex container added to nav_menu */
 #nav_menu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     list-style-type: none;
     padding: 1em 0;
     text-align: center;
-    border-top: 2px solid #ee1213;
-    border-bottom: 2px solid #ee1213;
 }
 
 #nav_menu ul li {
@@ -86,8 +88,11 @@ nav {
 }
 
 /* Media Query shift from horizontal to verical navigation menu. */
-@media only screen and (max-width: 510px) {
+@media only screen and (max-width: 768px) {
     #nav_menu ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
         list-style-type: none;
         margin-left: 1.25em;
         margin-bottom: 1.5em;

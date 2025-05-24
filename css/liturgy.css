@@ -1,0 +1,77 @@
+/* A simple grid area layout for the header. */
+header.liturgyGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 16px;
+    grid-template-areas:
+        "liturgyTitle1 liturgyTitle2 liturgyTitle3";
+}
+
+#liturgyTitle1 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+#liturgyTitle2 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+#liturgyTitle3 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+/* End of the grid area. */
+
+/* Flexbox example for the actual liturgical readings. */
+#liturgyFlex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#liturgyFlex>div {
+    text-align: center;
+    width: 31%;
+    padding: 0.90%;
+}
+
+@media only screen and (max-width: 768px) {
+    header.liturgyGrid {
+        width: auto;
+        display: grid;
+        grid-template: repeat(1, auto) / 3fr;
+        grid-gap: 1.5em;
+        grid-template-areas:
+            "liturgyTitle1"
+            "liturgyTitle2"
+            "liturgyTitle3";
+    }
+
+    #liturgyFlex {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #liturgyFlex>div {
+        text-align: center;
+        width: 100%;
+        padding: 0.90%;
+    }
+
+    #liturgyTitle1 {
+        font-size: 2vw;
+    }
+
+    #liturgyTitle2 {
+        font-size: 2vw;
+    }
+
+    #liturgyTitle3 {
+        font-size: 2vw;
+    }
+
+}
