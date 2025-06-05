@@ -20,6 +20,6 @@ golden-legend.html - line 10
 liturgy.html - line 10
 sacred-tradition - line 10
 
-#Extra Credit #2 - add table
+Extra Credit #2 - add table
 liturgy.html - lines 31-53
 liturgy.css - lines 43-139
