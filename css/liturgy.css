@@ -1,10 +1,11 @@
 /* A simple grid area layout for the header. */
 header.liturgyGrid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 2fr);
     grid-gap: 16px;
     grid-template-areas:
-        "liturgyTitle1 liturgyTitle2 liturgyTitle3";
+        "liturgyTitle1 liturgyTitle2 liturgyTitle3"
+        "tableLiturgy tableLiturgy tableLiturgy";
 }
 
 #liturgyTitle1 {
@@ -27,39 +28,41 @@ header.liturgyGrid {
 
 /* End of the grid area. */
 
-/* Flexbox example for the actual liturgical readings. */
-#liturgyFlex {
-    display: flex;
-    flex-wrap: wrap;
+/* Start of table. */
+
+table, td {
+	border: 1px solid #000000;
+	border-collapse: collapse;
 }
 
-#liturgyFlex>div {
-    text-align: center;
-    width: 31%;
-    padding: 0.90%;
+th, td {
+	padding: .2em .6em;
+	text-align: center;
 }
+
+thead, tfoot {
+	background-image: linear-gradient(#ee1213, #000000);
+    color: #ffffff; 
+}
+
+#tableLiturgy {
+    padding-top: 1.213%;
+    padding-bottom: 1.213%;
+}
+
+/* End of table. */
 
 @media only screen and (max-width: 768px) {
     header.liturgyGrid {
         width: auto;
         display: grid;
-        grid-template: repeat(1, auto) / 3fr;
+        grid-template: repeat(1, auto) / 4fr;
         grid-gap: 1.5em;
         grid-template-areas:
             "liturgyTitle1"
             "liturgyTitle2"
-            "liturgyTitle3";
-    }
-
-    #liturgyFlex {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    #liturgyFlex>div {
-        text-align: center;
-        width: 100%;
-        padding: 0.90%;
+            "liturgyTitle3"
+            "tableLiturgy";
     }
 
     #liturgyTitle1 {

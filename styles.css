@@ -2,6 +2,7 @@
 /* vh is viewport height so it can adapt to different displays */
 img {
     height: 40vh;
+    width: 12.13vw;
 }
 
 /* id selector */
@@ -89,6 +90,11 @@ nav {
 
 /* Media Query shift from horizontal to verical navigation menu. */
 @media only screen and (max-width: 768px) {
+
+    img {
+        width: 31.21vw;
+    }
+
     #nav_menu ul {
         display: flex;
         flex-direction: column;
