@@ -5,6 +5,11 @@ img {
     width: 12.13vw;
 }
 
+.homeIcon {
+    height: 1.213rem;
+    width: 1.213rem;
+}
+
 /* id selector */
 /* rem is relative to root element meaning the default text size of the html page */
 #titleMain {
