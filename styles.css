@@ -1,3 +1,11 @@
+/* Apply Module 9 - Google Font globally */
+body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
 /* type selector */
 /* vh is viewport height so it can adapt to different displays */
 img {
