@@ -101,6 +101,18 @@ nav {
     color: #e1e213;
 }
 
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.box {
+    flex: 1;
+    margin: 1.213%;
+    padding: 1.213%;
+    width: auto;
+}
+
 /* Media Query shift from horizontal to verical navigation menu. */
 @media only screen and (max-width: 768px) {
 

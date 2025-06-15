@@ -30,12 +30,18 @@ header.liturgyGrid {
 
 /* Start of table. */
 
+table {
+    table-layout: fixed;
+    width: 100%;
+}
+
 table, td {
 	border: 1px solid #000000;
 	border-collapse: collapse;
 }
 
 th, td {
+    width: 30%;
 	padding: .2em .6em;
 	text-align: center;
 }
